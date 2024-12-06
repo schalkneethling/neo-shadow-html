@@ -6,53 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nimbus Tech Team</title>
     <link href="css/global.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/user-card.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
     <nimbus-team>
         <template shadowrootmode="open">
-            <slot></slot>
+            <ul class="card-list">
+                <li>
+                    <article class="user-card">
+                        <h2 class="user-card-title">Marlowe Solace</h2>
+
+                        <img class="user-card-avatar" src="/assets/avatars/marlowe.svg" height="150" width="150"
+                            alt="" />
+
+                        <span class="user-card-role">Pixel Whisperer</span>
+                        <span class="user-card-email">
+                            <span class="visually-hidden">Email:</span>
+                            <a href="marlowe@nimbus.tech">marlowe@nimbus.tech</a>
+                        </span>
+                        <span class="user-card-phone">
+                            <span class="visually-hidden">Phone:</span>
+                            <a href="tel:+1 (555) 987-6543">+1 (555) 987-6543</a>
+                        </span>
+
+                        <ul class="user-card-social">
+                            <li>
+                                <a class="icon icon-social-bsky" href="https://bsky.app/profile/marlowe.solace"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <span class="visually-hidden">Follow Marlowe on Bluesky</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon icon-social-linkedin" href="https://linkedin.com/in/marlowesolace"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <span class="visually-hidden">Follow Marlowe on LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon icon-social-mastodon" href="https://mastodon.social/@marlowesolace"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <span class="visually-hidden">Follow Marlowe on Mastodon</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+            </ul>
         </template>
-        <ul class="card-list">
-            <li>
-                <article class="user-card">
-                    <h2 class="user-card-title">Marlowe Solace</h2>
-
-                    <img class="user-card-avatar" src="/assets/avatars/marlowe.svg" height="150" width="150" alt="" />
-
-                    <span class="user-card-role">Pixel Whisperer</span>
-                    <span class="user-card-email">
-                        <span class="visually-hidden">Email:</span>
-                        <a href="marlowe@nimbus.tech">marlowe@nimbus.tech</a>
-                    </span>
-                    <span class="user-card-phone">
-                        <span class="visually-hidden">Phone:</span>
-                        <a href="tel:+1 (555) 987-6543">+1 (555) 987-6543</a>
-                    </span>
-
-                    <ul class="user-card-social">
-                        <li>
-                            <a class="icon icon-social-bsky" href="https://bsky.app/profile/marlowe.solace"
-                                target="_blank" rel="noopener noreferrer">
-                                <span class="visually-hidden">Follow MArlowe on Bluesky</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icon icon-social-linkedin" href="https://linkedin.com/in/marlowesolace"
-                                target="_blank" rel="noopener noreferrer">
-                                <span class="visually-hidden">Follow Marlowe on LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icon icon-social-mastodon" href="https://mastodon.social/@marlowesolace"
-                                target="_blank" rel="noopener noreferrer">
-                                <span class="visually-hidden">Follow Marlowe on Mastodon</span>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </li>
-        </ul>
     </nimbus-team>
 
     <script type="module" src="js/nimbus-team.js"></script>
