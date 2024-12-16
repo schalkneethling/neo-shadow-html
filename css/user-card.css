@@ -76,17 +76,17 @@
 }
 
 .icon.icon-social-bsky {
-  mask-image: url("/assets/social/bsky.svg");
+  mask-image: url("assets/social/bsky.svg");
   mask-size: cover;
 }
 
 .icon.icon-social-linkedin {
-  mask-image: url("/assets/social/linkedin.svg");
+  mask-image: url("assets/social/linkedin.svg");
   mask-size: cover;
 }
 
 .icon.icon-social-mastodon {
-  mask-image: url("/assets/social/mastodon.svg");
+  mask-image: url("assets/social/mastodon.svg");
   mask-size: cover;
 }
 
